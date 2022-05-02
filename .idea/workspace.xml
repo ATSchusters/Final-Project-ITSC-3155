@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b483958-d3dd-4c0d-a543-de2a7e22f9d1" name="Default Changelist" comment="Updated scripts and working barchart">
-      <change afterPath="$PROJECT_DIR$/TestingSearch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bubblechart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScatterMultiSelect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BrandBarchart.html" beforeDir="false" afterPath="$PROJECT_DIR$/BrandBarchart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubbletest.py" beforeDir="false" afterPath="$PROJECT_DIR$/bubbletest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cleaned_Laptop_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Cleaned_Laptop_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestingSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestingSearch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.TestingSearch">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Red Wraith\Documents\GitHub\Final-Project-ITSC-3155" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.ScatterMultiSelect">
     <configuration name="BrandBarchart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DarkOrange" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="BubbleChart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ScatterMultiSelect" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DarkOrange" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,8 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BubbleChart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ScatterMultiSelect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -100,7 +103,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LaptopLineChart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="TestTest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DarkOrange" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -112,8 +115,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LaptopLineChart.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TestTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -166,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ScatterMultiSelect" />
+        <item itemvalue="Python.TestTest" />
         <item itemvalue="Python.TestingSearch" />
         <item itemvalue="Python.bubbletest" />
         <item itemvalue="Python.BrandBarchart" />
-        <item itemvalue="Python.BubbleChart" />
-        <item itemvalue="Python.LaptopLineChart" />
       </list>
     </recent_temporary>
   </component>
@@ -206,29 +208,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="Updated scripts and working barchart" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="936" height="280" key="GridCell.Tab.0.bottom" timestamp="1651387237318">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1651476961181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651387237318" />
-    <state width="936" height="280" key="GridCell.Tab.0.center" timestamp="1651387237318">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651476961181" />
+    <state width="1899" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1651387688250" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1651476961181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651387237318" />
-    <state width="936" height="280" key="GridCell.Tab.0.left" timestamp="1651387237318">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651476961181" />
+    <state width="1899" height="280" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1651387688250" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1651476961181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651387237318" />
-    <state width="936" height="280" key="GridCell.Tab.0.right" timestamp="1651387237318">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651476961181" />
+    <state width="1899" height="280" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1651387688250" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1651476961181">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="936" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651387237318" />
-    <state x="195" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1651365927649">
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651476961181" />
+    <state width="1899" height="280" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1651387688250" />
+    <state x="195" y="351" key="com.intellij.ide.util.TipDialog" timestamp="1651465630773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="195" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651365927649" />
+    <state x="195" y="351" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651465630773" />
     <state x="766" y="213" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1651365977732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="213" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651365977732" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1651466990123">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1651466990123" />
   </component>
 </project>

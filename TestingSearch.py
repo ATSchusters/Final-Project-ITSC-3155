@@ -9,7 +9,7 @@ df = pd.read_csv('Cleaned_Laptop_data.csv')
 group_df = df.groupby(['brand'])['brand'].count().reset_index(name = 'total')\
     .sort_values(['total'], ascending = False)
 
-fig = px.scatter(x=group_df['brand'], y=group_df['total'])
+fig = px.bar(x=group_df['brand'], y=group_df['total'])
 
 app.layout = html.Div([
     dcc.Dropdown(id='brand_selector',
