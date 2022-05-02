@@ -8,7 +8,7 @@ app = Dash(__name__)
 df = pd.read_csv('Cleaned_Laptop_data.csv')
 
 fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                 hover_data=['brand', 'model', 'ram_gb', 'processor_brand'])
+                 hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type', 'ssd'])
 
 app.layout = html.Div([
     dcc.Dropdown(id='brand_selector',
@@ -36,14 +36,42 @@ app.layout = html.Div([
                  clearable=True,
                  placeholder='Select Processors Brands To Filter By'),
 
+    dcc.Dropdown(id='processor_name_selector',
+                 options=[{'label': i, 'value': i} for i in df['processor_name'].unique()]
+                         + [{'label': 'Select All', 'value': 'allProcessorName'}],
+                 value=df['processor_name'].unique(),
+                 multi=True,
+                 searchable=True,
+                 clearable=True,
+                 placeholder='Select Processor Names To Filter By'),
+
     dcc.Dropdown(id='ram_selector',
                  options=[{'label': i, 'value': i} for i in df['ram_gb'].unique()]
                          + [{'label': 'Select All', 'value': 'allRam'}],
-                 value=df['model'].unique(),
+                 value=df['ram_gb'].unique(),
                  multi=True,
                  searchable=True,
                  clearable=True,
                  placeholder='Select Ram Size To Filer By'),
+
+    dcc.Dropdown(id='ram_type_selector',
+                 options=[{'label': i, 'value': i} for i in df['ram_type'].unique()]
+                         + [{'label': 'Select All', 'value': 'allRamType'}],
+                 value=df['ram_type'].unique(),
+                 multi=True,
+                 searchable=True,
+                 clearable=True,
+                 placeholder='Select Ram Types To Filter By'),
+
+    dcc.Dropdown(id='ssd_selector',
+                 options=[{'label': i, 'value': i} for i in df['ssd'].unique()]
+                         + [{'label': 'Select All', 'value': 'allSSD'}],
+                 value=df['ssd'].unique(),
+                 multi=True,
+                 searchable=True,
+                 clearable=True,
+                 placeholder='Select SSD To Filter By'),
+
     dcc.Graph(id='graph',
               figure={}
               )
@@ -55,11 +83,17 @@ app.layout = html.Div([
     [Input(component_id='brand_selector', component_property='value')],
     [Input(component_id='model_selector', component_property='value')],
     [Input(component_id='processor_brand_selector', component_property='value')],
-    [Input(component_id='ram_selector', component_property='value')]
+    [Input(component_id='processor_name_selector', component_property='value')],
+    [Input(component_id='ram_selector', component_property='value')],
+    [Input(component_id='ram_type_selector', component_property='value')],
+    [Input(component_id='ssd_selector', component_property='value')]
 
 )
-def update_graph(brand_selected, model_selector, ram_selector, processor_brand_selector):
-    if len(brand_selected) > 0 | len(model_selector) > 0 | len(ram_selector) > 0 | len(processor_brand_selector) > 0:
+def update_graph(brand_selected, model_selector, ram_selector, processor_brand_selector, processor_name_selector,
+                 ram_type_selector, ssd_selector):
+    if len(brand_selected) > 0 | len(model_selector) > 0 | len(ram_selector) > 0 | len(
+            processor_brand_selector) > 0 | len(processor_name_selector) > 0 | len(ram_type_selector) > 0 | len(ssd_selector) > 0:
+
         if 'allBrand' in brand_selected:
             dff = df
         elif len(brand_selected) < 1:
@@ -88,13 +122,36 @@ def update_graph(brand_selected, model_selector, ram_selector, processor_brand_s
         else:
             dff = df[df['ram_gb'].isin(ram_selector)]
 
+        if 'allProcessorName' in processor_name_selector:
+            dff = df
+        elif len(processor_name_selector) < 1:
+            dff = df
+        else:
+            dff = df[df['processor_name'].isin(processor_name_selector)]
+
+        if 'allRamType' in ram_type_selector:
+            dff = df
+        elif len(ram_type_selector) < 1:
+            dff = df
+        else:
+            dff = df[df['ram_type'].isin(ram_type_selector)]
+
+        if 'allSSD' in ssd_selector:
+            dff = df
+        elif len(ssd_selector) < 1:
+            dff = df
+        else:
+            dff = df[df['brand'].isin(ssd_selector)]
+
         fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand'])
+                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type',
+                                     'ssd'])
 
         return fig
     else:
         fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand'])
+                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type',
+                                     'ssd'])
         return fig
 
 

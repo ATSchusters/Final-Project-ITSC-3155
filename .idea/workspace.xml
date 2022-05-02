@@ -7,9 +7,6 @@
     <list default="true" id="3b483958-d3dd-4c0d-a543-de2a7e22f9d1" name="Default Changelist" comment="Updated scripts and working barchart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScatterMultiSelect.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScatterMultiSelect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestingSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/TestingSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bubblechart.html" beforeDir="false" afterPath="$PROJECT_DIR$/bubblechart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linechart.html" beforeDir="false" afterPath="$PROJECT_DIR$/linechart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +49,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mlowe\Downloads" />
+    </key>
   </component>
   <component name="RunManager" selected="Python.ScatterMultiSelect">
     <configuration name="BrandBarchart" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -210,15 +212,5 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated scripts and working barchart" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated scripts and working barchart" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$TestingSearch.coverage" NAME="TestingSearch Coverage Results" MODIFIED="1651505059424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$TestingMultiDrops.coverage" NAME="TestingMultiDrops Coverage Results" MODIFIED="1651504697715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$LaptopLineChart.coverage" NAME="LaptopLineChart Coverage Results" MODIFIED="1651090346719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$LaptopHeatmap.coverage" NAME="LaptopHeatmap Coverage Results" MODIFIED="1650831873628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$BubbleChart.coverage" NAME="BubbleChart Coverage Results" MODIFIED="1651091669567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$BrandBarchart.coverage" NAME="BrandBarchart Coverage Results" MODIFIED="1651089972468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$ScatterMultiSelect.coverage" NAME="ScatterMultiSelect Coverage Results" MODIFIED="1651512853751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$bubbletest.coverage" NAME="bubbletest Coverage Results" MODIFIED="1651091687701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
