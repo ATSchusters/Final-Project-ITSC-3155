@@ -8,7 +8,8 @@ app = Dash(__name__)
 df = pd.read_csv('Cleaned_Laptop_data.csv')
 
 fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                 hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type', 'ssd', 'hdd', 'os', 'weight', 'display_size', 'Touchscreen'])
+                 hover_data=['brand', 'model', 'processor_brand', 'processor_name', 'ram_GB', 'ram_type',
+                             'ssd', 'hdd', 'os', 'weight', 'display_size', 'Touchscreen'])
 
 app.layout = html.Div([
     dcc.Dropdown(id='brand_selector',
@@ -48,9 +49,9 @@ app.layout = html.Div([
                  placeholder='Select Processor Names To Filter By'),
 
     dcc.Dropdown(id='ram_selector',
-                 options=[{'label': i, 'value': i} for i in df['ram_gb'].unique()]
+                 options=[{'label': i, 'value': i} for i in df['ram_GB'].unique()]
                          + [{'label': 'Select All', 'value': 'allRam'}],
-                 value=df['ram_gb'].unique(),
+                 value=df['ram_GB'].unique(),
                  multi=True,
                  searchable=True,
                  clearable=True,
@@ -133,112 +134,116 @@ app.layout = html.Div([
     [Input(component_id='processor_name_selector', component_property='value')],
     [Input(component_id='ram_selector', component_property='value')],
     [Input(component_id='ram_type_selector', component_property='value')],
-    [Input(component_id='ssd_selector', component_property='value')]
-    [Input(component_id='hdd_selector', component_property='value')]
-    [Input(component_id='os_selector', component_property='value')]
-    [Input(component_id='weight_selector', component_property='value')]
-    [Input(component_id='display_size_selector', component_property='value')]
+    [Input(component_id='ssd_selector', component_property='value')],
+    [Input(component_id='hdd_selector', component_property='value')],
+    [Input(component_id='os_selector', component_property='value')],
+    [Input(component_id='weight_selector', component_property='value')],
+    [Input(component_id='display_size_selector', component_property='value')],
     [Input(component_id='touchscreen_selector', component_property='value')]
 
 )
-def update_graph(brand_selected, model_selector, ram_selector, processor_brand_selector, processor_name_selector,
-                 ram_type_selector, ssd_selector):
-    if len(brand_selected) > 0 | len(model_selector) > 0 | len(ram_selector) > 0 | len(
-            processor_brand_selector) > 0 | len(processor_name_selector) > 0 | len(ram_type_selector) > 0 | len(ssd_selector) > 0:
+def update_graph(brand_selected, model_selector, processor_brand_selector, processor_name_selector, ram_selector,
+                 ram_type_selector, ssd_selector, hdd_selector, os_selector, weight_selector, display_size_selector,
+                 touchscreen_selector):
+    if len(brand_selected) > 0 or len(model_selector) > 0 or len(processor_brand_selector) > 0 or len(ram_selector) > 0\
+            or len(processor_name_selector) > 0 or len(ram_type_selector) > 0 or len(ssd_selector) > 0\
+            or len(hdd_selector) > 0 or len(os_selector) > 0 or len(weight_selector) > 0\
+            or len(display_size_selector) > 0 or len(touchscreen_selector) > 0:
 
+        dff = df
         if 'allBrand' in brand_selected:
-            dff = df
+            dff = dff
         elif len(brand_selected) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['brand'].isin(brand_selected)]
+            dff = dff[dff['brand'].isin(brand_selected)]
 
         if 'allModel' in model_selector:
             dff = dff
         elif len(model_selector) < 1:
-            dff = df
+            dff = dff
         else:
             dff = dff[dff['model'].isin(model_selector)]
 
         if 'allProcessorBrand' in processor_brand_selector:
             dff = dff
         elif len(processor_brand_selector) < 1:
-            dff = df
+            dff = dff
         else:
             dff = dff[dff['processor_brand'].isin(processor_brand_selector)]
 
-        if 'allRam' in ram_selector:
-            dff = df
-        elif len(ram_selector) < 1:
-            dff = df
-        else:
-            dff = df[df['ram_gb'].isin(ram_selector)]
-
         if 'allProcessorName' in processor_name_selector:
-            dff = df
+            dff = dff
         elif len(processor_name_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['processor_name'].isin(processor_name_selector)]
+            dff = dff[dff['processor_name'].isin(processor_name_selector)]
+
+        if 'allRam' in ram_selector:
+            dff = dff
+        elif len(ram_selector) < 1:
+            dff = dff
+        else:
+            dff = dff[dff['ram_GB'].isin(ram_selector)]
 
         if 'allRamType' in ram_type_selector:
-            dff = df
+            dff = dff
         elif len(ram_type_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['ram_type'].isin(ram_type_selector)]
+            dff = dff[dff['ram_type'].isin(ram_type_selector)]
 
         if 'allSSD' in ssd_selector:
-            dff = df
+            dff = dff
         elif len(ssd_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['ssd'].isin(ssd_selector)]
+            dff = dff[dff['ssd'].isin(ssd_selector)]
 
         if 'allHDD' in hdd_selector:
-            dff = df
+            dff = dff
         elif len(hdd_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['hdd'].isin(hdd_selector)]
+            dff = dff[dff['hdd'].isin(hdd_selector)]
 
         if 'allOS' in os_selector:
-            dff = df
+            dff = dff
         elif len(os_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['os'].isin(os_selector)]
+            dff = dff[dff['os'].isin(os_selector)]
 
         if 'allWeight' in weight_selector:
-            dff = df
+            dff = dff
         elif len(weight_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['weight'].isin(weight_selector)]
+            dff = dff[dff['weight'].isin(weight_selector)]
 
         if 'allDisplaySize' in display_size_selector:
-            dff = df
+            dff = dff
         elif len(display_size_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['display_size'].isin(display_size_selector)]
+            dff = dff[dff['display_size'].isin(display_size_selector)]
 
         if 'allTouchscreen' in touchscreen_selector:
-            dff = df
+            dff = dff
         elif len(touchscreen_selector) < 1:
-            dff = df
+            dff = dff
         else:
-            dff = df[df['Touchscreen'].isin(touchscreen_selector)]
+            dff = dff[dff['Touchscreen'].isin(touchscreen_selector)]
 
 
-        fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type',
+        fig = px.scatter(dff, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
+                         hover_data=['brand', 'model','processor_brand', 'processor_name','ram_GB', 'ram_type',
                                      'ssd', 'hdd', 'os', 'weight', 'display_size', 'Touchscreen'])
 
         return fig
     else:
         fig = px.scatter(df, x='star_rating', y='latest_price', color='star_rating', size='latest_price',
-                         hover_data=['brand', 'model', 'ram_gb', 'processor_brand', 'processor_name', 'ram_type',
+                         hover_data=['brand', 'model','processor_brand', 'processor_name','ram_GB', 'ram_type',
                                      'ssd', 'hdd', 'os', 'weight', 'display_size', 'Touchscreen'])
         return fig
 
