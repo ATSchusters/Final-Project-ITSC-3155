@@ -26,6 +26,7 @@ app.layout = html.Div([
 @app.callback(
     Output(component_id='graph', component_property='figure'),
     [Input(component_id='brand_selector', component_property='value')]
+
 )
 def update_graph(brand_selected):
     if len(brand_selected) > 0:
