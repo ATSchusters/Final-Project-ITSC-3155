@@ -5,6 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b483958-d3dd-4c0d-a543-de2a7e22f9d1" name="Default Changelist" comment="Updated scripts and working barchart">
+      <change beforePath="$PROJECT_DIR$/.idea/DarkOrange.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DarkOrange.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_2_2022_12_57_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_2_2022_12_57_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ScatterMultiSelect.py" beforeDir="false" afterPath="$PROJECT_DIR$/ScatterMultiSelect.py" afterDir="false" />
     </list>
@@ -194,6 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1649708911393</updated>
       <workItem from="1650821258995" duration="12693000" />
+      <workItem from="1651522968788" duration="2727000" />
     </task>
     <task id="LOCAL-00001" summary="Updated scripts and working barchart">
       <created>1650489527030</created>
@@ -208,9 +212,29 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated scripts and working barchart" />
     <option name="LAST_COMMIT_MESSAGE" value="Updated scripts and working barchart" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$BrandBarchart.coverage" NAME="BrandBarchart Coverage Results" MODIFIED="1651089972468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$ScatterMultiSelect.coverage" NAME="ScatterMultiSelect Coverage Results" MODIFIED="1651525026057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$bubbletest.coverage" NAME="bubbletest Coverage Results" MODIFIED="1651091650130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$LaptopLineChart.coverage" NAME="LaptopLineChart Coverage Results" MODIFIED="1651072840674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$BubbleChart.coverage" NAME="BubbleChart Coverage Results" MODIFIED="1650828794287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Final_Project_ITSC_3155$LaptopHeatmap.coverage" NAME="LaptopHeatmap Coverage Results" MODIFIED="1650831873628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
